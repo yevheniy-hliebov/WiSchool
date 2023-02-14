@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230214191102">
+
+    <title>Головна</title>
+</head>
+    <body>
+        <svg width="0" height="0" style="display: none"><symbol viewBox="0 0 24 24" id="book" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M1.5 4.242c1.328-.555 3.231-1.154 5.082-1.34 1.995-.2 3.687.095 4.668 1.128v14.62c-1.402-.796-3.18-.905-4.82-.74-1.77.18-3.554.691-4.93 1.216V4.242Zm11.25-.212c.981-1.033 2.673-1.329 4.668-1.128 1.851.186 3.755.785 5.082 1.34v14.884c-1.377-.525-3.16-1.038-4.93-1.215-1.642-.166-3.418-.058-4.82.738V4.03ZM12 2.674c-1.477-1.27-3.62-1.46-5.57-1.264-2.27.23-4.563 1.008-5.99 1.657A.75.75 0 0 0 0 3.75v16.5a.75.75 0 0 0 1.06.682c1.324-.6 3.455-1.321 5.52-1.53 2.114-.213 3.886.13 4.835 1.316a.75.75 0 0 0 1.17 0c.95-1.185 2.721-1.529 4.833-1.316 2.067.209 4.2.93 5.521 1.53A.75.75 0 0 0 24 20.25V3.75a.75.75 0 0 0-.44-.683c-1.427-.65-3.72-1.428-5.99-1.657-1.95-.197-4.093-.006-5.57 1.264Z"/></g></symbol><symbol viewBox="0 0 24 24" id="chat" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.927 2h4.146c1.823 0 3.293 0 4.45.155 1.2.162 2.21.507 3.012 1.31.803.802 1.148 1.813 1.31 3.013C23 7.634 23 9.104 23 10.927v.146c0 1.823 0 3.293-.155 4.45-.162 1.2-.507 2.21-1.31 3.012-.802.803-1.813 1.148-3.013 1.31-1.156.155-2.625.155-4.449.155H14a1 1 0 1 1 0-2c1.914 0 3.249-.002 4.256-.138.978-.131 1.496-.372 1.865-.74.369-.37.61-.888.741-1.866.136-1.007.138-2.342.138-4.256 0-1.914-.002-3.249-.138-4.256-.131-.978-.372-1.496-.74-1.865-.37-.369-.888-.61-1.866-.741C17.249 4.002 15.914 4 14 4h-4c-1.914 0-3.249.002-4.256.138-.978.131-1.496.372-1.865.74-.369.37-.61.888-.741 1.866C3.002 7.751 3 9.086 3 11c0 1.914.002 3.249.138 4.256.131.978.372 1.496.74 1.865h.002c.41.412 1.005.663 2.217.782a1 1 0 0 1-.194 1.99c-1.388-.135-2.543-.461-3.438-1.358-.803-.802-1.148-1.813-1.31-3.013C1 14.366 1 12.896 1 11.073v-.146c0-1.823 0-3.293.155-4.45.162-1.2.507-2.21 1.31-3.012.802-.803 1.813-1.148 3.013-1.31C6.634 2 8.104 2 9.927 2Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8 10a1 1 0 0 1 1 1v.01a1 1 0 1 1-2 0V11a1 1 0 0 1 1-1Zm4 0a1 1 0 0 1 1 1v.01a1 1 0 1 1-2 0V11a1 1 0 0 1 1-1Zm4 0a1 1 0 0 1 1 1v.01a1 1 0 1 1-2 0V11a1 1 0 0 1 1-1Zm-9.41 6.504a1 1 0 0 1 .906 1.086l-.042.467c-.096 1.052-.158 1.749-.145 2.229l.005.115c.05-.016.108-.037.174-.063.497-.193 1.188-.55 2.21-1.08C10.991 18.586 12.524 18 14 18a1 1 0 1 1 0 2c-.996 0-2.187.413-3.38 1.033l-.062.031c-.948.493-1.735.901-2.346 1.139a3.715 3.715 0 0 1-.976.257c-.342.032-.75-.009-1.124-.26-.702-.471-.787-1.309-.802-1.86-.017-.615.058-1.433.146-2.403l.048-.527a1 1 0 0 1 1.086-.906Z"/></symbol><symbol viewBox="0 0 24 24" id="hands" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M10.543 23.91c-2.14-.277-4.344-1.195-5.95-2.48C.98 18.547-.66 13.992.278 9.469.68 7.516 1.727 5.46 3.067 3.98a11.66 11.66 0 0 1 3.507-2.687C8.34.398 10.028-.004 12.02-.004c1.429 0 2.578.188 3.894.637a12.01 12.01 0 0 1 7.461 7.457c.704 2.063.832 4.258.383 6.434-.36 1.719-1.286 3.652-2.426 5.05-.469.579-1.547 1.61-2.113 2.028a12.158 12.158 0 0 1-5.781 2.308c-.618.078-2.298.074-2.895 0Zm3.27-1.003a11.178 11.178 0 0 0 7.254-4.536c2.027-2.847 2.57-6.668 1.425-10-.269-.78-.937-2.085-1.425-2.773-.543-.77-1.887-2.117-2.66-2.66-.75-.531-2.028-1.176-2.9-1.461a11.065 11.065 0 0 0-9.5 1.211c-1.309.86-2.428 1.98-3.288 3.289a11.058 11.058 0 0 0-1.212 9.496c.29.87.934 2.152 1.461 2.902.547.77 1.891 2.117 2.66 2.66.692.485 1.993 1.152 2.774 1.426 1.74.591 3.598.744 5.41.446Zm-4.157-4.024a4.22 4.22 0 0 1-1.582-.578c-.433-.278-3.707-3.485-3.867-3.786-.183-.343.137-.969.594-1.16l.215-.09-.66-.672c-.363-.371-.707-.766-.762-.875-.129-.25-.133-.785-.012-1.024a1.4 1.4 0 0 1 .265-.328c.161-.133.176-.18.161-.516-.02-.297.007-.414.136-.637a1.15 1.15 0 0 1 .954-.54c.21 0 .265-.026.355-.183.235-.41.906-.559 1.418-.308l.278.132.136-.132c.188-.172.563-.324.809-.324.492 0 1.187.566 1.187.964 0 .476-.433.559-.863.164-.285-.265-.43-.293-.547-.105-.058.09.082.258.922 1.105.84.844.992 1.024.992 1.184a.492.492 0 0 1-.472.465c-.153 0-.402-.22-1.555-1.368-1.176-1.172-1.39-1.36-1.484-1.3-.255.16-.168.277 1.206 1.656.747.75 1.36 1.414 1.36 1.477 0 .129-.117.367-.214.43a.567.567 0 0 1-.255.047c-.16.003-.406-.22-1.714-1.524C5.344 9.752 5.11 9.542 5.016 9.6c-.258.164-.172.278 1.324 1.781.817.817 1.5 1.548 1.52 1.626.043.14-.051.387-.176.472a.6.6 0 0 1-.261.047c-.16 0-.363-.175-1.446-1.257-1.043-1.044-1.285-1.258-1.418-1.246-.375.043-.242.21 1.695 2.152 1.68 1.684 1.895 1.923 1.895 2.098a.385.385 0 0 1-.168.329c-.301.238-.418.183-1.176-.55-.387-.372-.786-.731-.891-.798-.192-.117-.676-.168-.766-.074-.032.027.683.781 1.586 1.675 1.504 1.488 1.676 1.641 2.117 1.852a2.957 2.957 0 0 0 2.622.007c1.261-.601 1.961-2.062 1.617-3.387-.172-.66-.387-.976-1.254-1.87-1-1.025-1.231-1.306-1.477-1.798-.274-.55-.39-1.086-.39-1.754 0-.723.074-1.05.394-1.727.304-.644.941-1.32 1.57-1.668 1.235-.687 2.86-.629 4.039.141.235.153 1.082.95 2.137 2.008 1.566 1.57 1.746 1.774 1.746 1.953 0 .426-.348.899-.735.996-.144.04-.117.078.54.746.382.387.738.805.793.934.183.442.1.87-.235 1.223-.172.18-.195.242-.2.601-.003.317-.039.45-.164.63a1.109 1.109 0 0 1-.891.488c-.242 0-.289.023-.41.207-.274.422-.985.57-1.445.297l-.23-.137-.165.16c-.363.349-.95.395-1.394.11-.36-.226-.625-.543-.625-.742 0-.176.254-.465.41-.465.149 0 .348.117.575.328.226.215.422.215.453-.004.015-.117-.172-.34-.93-1.101-.797-.805-.95-.989-.95-1.145a.637.637 0 0 1 .047-.254.516.516 0 0 1 .477-.18c.078.02.738.63 1.46 1.351.727.727 1.364 1.32 1.423 1.32.16 0 .265-.16.191-.297-.035-.062-.649-.691-1.36-1.402-1.113-1.11-1.293-1.316-1.293-1.48a.595.595 0 0 1 .048-.259c.066-.097.3-.214.433-.214.058 0 .793.683 1.633 1.52 1.539 1.53 1.652 1.616 1.813 1.363.058-.094-.153-.332-1.458-1.641-1.348-1.352-1.527-1.555-1.527-1.73 0-.121.055-.246.141-.324.285-.27.371-.215 1.758 1.164 1.313 1.308 1.43 1.394 1.59 1.144.059-.094-.207-.382-1.836-2.016-1.774-1.781-1.902-1.926-1.902-2.133 0-.313.18-.461.527-.437.063.004.438.32.825.699.39.379.812.734.937.789.246.101.531.117.653.039.117-.074-3.126-3.266-3.547-3.488a3.01 3.01 0 0 0-4.16 1.383c-.204.433-.23.562-.258 1.12-.024.528-.004.692.11 1.028.203.598.378.844 1.288 1.774.985 1.008 1.173 1.238 1.422 1.778.704 1.5.407 3.234-.753 4.39-.883.887-2.086 1.3-3.278 1.137Z"/></g></symbol><symbol viewBox="0 0 22 22" id="job" xmlns="http://www.w3.org/2000/svg"><path d="M6.229 6.4V2.886A2.343 2.343 0 0 1 8.57.543h4.686A2.343 2.343 0 0 1 15.6 2.886V6.4h3.514a2.343 2.343 0 0 1 2.343 2.343v10.543a2.343 2.343 0 0 1-2.343 2.343h-16.4a2.343 2.343 0 0 1-2.343-2.343V8.743A2.343 2.343 0 0 1 2.714 6.4H6.23ZM2.714 8.743v10.543h16.4V8.743h-3.516v3.514h-2.34V8.743H8.57v3.514H6.23V8.743H2.714ZM8.571 6.4h4.686V2.886H8.571V6.4Z"/></symbol><symbol viewBox="0 0 24 24" id="math" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 6.75a.5.5 0 0 0-.5.5v9.5a.5.5 0 0 0 .5.5h16.5a.5.5 0 0 0 .5-.5v-9.5a.5.5 0 0 0-.5-.5H3.75Zm-1.5.5a1.5 1.5 0 0 1 1.5-1.5h16.5a1.5 1.5 0 0 1 1.5 1.5v9.5a1.5 1.5 0 0 1-1.5 1.5H3.75a1.5 1.5 0 0 1-1.5-1.5v-9.5Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M17.25 3.75a.5.5 0 0 0-.5-.5h-9.5a.5.5 0 0 0-.5.5v16.5a.5.5 0 0 0 .5.5h9.5a.5.5 0 0 0 .5-.5V3.75Zm-.5-1.5a1.5 1.5 0 0 1 1.5 1.5v16.5a1.5 1.5 0 0 1-1.5 1.5h-9.5a1.5 1.5 0 0 1-1.5-1.5V3.75a1.5 1.5 0 0 1 1.5-1.5h9.5Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.204 9.32A.5.5 0 0 1 11.67 9h4.055a.5.5 0 0 1 0 1h-3.713l-1.816 4.68a.5.5 0 0 1-.928.011l-1.455-3.515a.5.5 0 1 1 .924-.382l.978 2.362 1.489-3.837Zm1.09 1.266a.5.5 0 0 1 .7.098l.836 1.108.836-1.108a.5.5 0 0 1 .798.602l-1.008 1.337 1.008 1.336a.5.5 0 0 1-.798.602l-.836-1.108-.836 1.108a.5.5 0 0 1-.798-.602l1.008-1.336-1.008-1.337a.5.5 0 0 1 .098-.7Z"/></symbol><symbol viewBox="0 0 16 16" id="simple-profile" xmlns="http://www.w3.org/2000/svg"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/></symbol><symbol viewBox="0 0 24 24" id="timer" xmlns="http://www.w3.org/2000/svg"><path d="M22.148 9.656h-6a.188.188 0 0 0-.187.188v1.125c0 .103.084.187.187.187h6a.188.188 0 0 0 .188-.187V9.844a.188.188 0 0 0-.188-.188Zm-3.14 3.188h-2.86a.188.188 0 0 0-.187.187v1.125c0 .103.084.188.187.188h2.86a.188.188 0 0 0 .187-.188v-1.125a.188.188 0 0 0-.187-.187Zm-7.821-5.285h-1.015a.262.262 0 0 0-.263.262v5.813c0 .084.04.161.108.21l3.49 2.546a.262.262 0 0 0 .366-.056l.602-.823v-.002a.262.262 0 0 0-.059-.366l-2.97-2.147V7.821a.26.26 0 0 0-.26-.262Z"/><path d="M18.863 15.794h-1.355a.385.385 0 0 0-.326.181 7.524 7.524 0 0 1-3.417 2.906 7.427 7.427 0 0 1-2.906.586 7.434 7.434 0 0 1-5.28-2.187A7.434 7.434 0 0 1 3.39 12a7.434 7.434 0 0 1 2.187-5.28 7.434 7.434 0 0 1 5.28-2.187 7.435 7.435 0 0 1 5.28 2.187c.4.398.746.834 1.044 1.305.07.113.195.18.326.18h1.355a.214.214 0 0 0 .192-.311 9.166 9.166 0 0 0-8.086-5.056c-5.065-.063-9.272 4.083-9.281 9.143-.01 5.07 4.099 9.183 9.168 9.183a9.168 9.168 0 0 0 8.199-5.058.215.215 0 0 0-.192-.312Z"/></symbol><symbol viewBox="0 0 215 13" id="underline" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_51_256)"><path d="M2 10.698C70 5.014 183-1.785 212.5 6.466"/></g></symbol><symbol viewBox="0 0 24 24" id="users" xmlns="http://www.w3.org/2000/svg"><path d="M9 3a5 5 0 1 0 0 10A5 5 0 0 0 9 3ZM6 8a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm10.908.218A2 2 0 0 0 16 8V6a4 4 0 1 1-2.357 7.232l1.178-1.616a2 2 0 1 0 2.087-3.398ZM19.998 21A4 4 0 0 0 16 17.002V15a6 6 0 0 1 6 6h-2.002ZM16 21h-2a5 5 0 1 0-10 0H2a7 7 0 1 1 14 0Z"/></symbol></svg>
+        <header class="header">
+    <div class="header__container">
+        <button type="button" class="icon-burger"><span></span></button>
+
+        <a href="index.html" class="header__logo logo">
+            <img src="img/logo.svg" alt="WiSchol logo">
+        </a>
+
+        <div class="header__menu-wrapper">
+            <nav class="header__menu menu">
+                <ul class="menu__body">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link">
+                            <span class="menu__link_main">Home</span>
+                            <span class="menu__link_hover">Home</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Courses</span>
+                            <span class="menu__link_hover">Courses</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Instructors</span>
+                            <span class="menu__link_hover">Instructors</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Schedules</span>
+                            <span class="menu__link_hover">Schedules</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <span class="menu__link_main">Contact Us</span>
+                            <span class="menu__link_hover">Contact Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="header__actions actions-header">            
+            <button data-popup-open="popup-search" type="button" class="actions-header__search-btn _icon-search"></button>
+            <button type="button" class="actions-header__login btn btn_no-bg">Login</button>
+            <button type="button" class="actions-header__reg btn">Register</button>
+            <button type="button" class="actions-header__prifile _icon-profile"></button>
+        </div>
+
+        <div data-popup="popup-search" data-moveto="header__menu, first, 767.95, max" class="header__search search-header">
+            <form data-form-req action="#" class="search-header__form">
+                <div class="search-header__row">
+                    <input data-required type="text" class="search-header__input" placeholder="What do you want to know?">
+                    <button data-popup-close="popup-search" type="button" class="search-header__btn-close _icon-close"></button>
+                </div>
+                <button type="submit" class="search-header__btn-search btn">Search</button>
+            </form>
+        </div>
+    </div>
+</header>
+        <main class="content">
+            <section class="content__section getstarted-section">
+                <div class="getstarted-section__container">
+                    <div class="getstarted-section__main-content">
+                        <div class="getstarted-section__title-block title-block">
+                            <h1 class="title-block__title">
+                                Quality <span class="span-green">Education</span> By Any Means Necessary.
+                            </h1>
+                            <a href="#" class="title-block__btn btn">Get Started</a>
+                        </div>
+                        <div class="getstarted-section__img-info img-info">
+                            <div class="img-info__image">
+                                <picture><source srcset="img/img-info/01.webp" type="image/webp"><img src="img/img-info/01.jpg" alt="img-info"></picture>
+                            </div>
+                            <div class="img-info__shape-info img-info__shape_1">
+                                <h2 class="img-info__shape_1__title">Learn from best <span class="span-green">instructors</span> around the globe</h2>
+                                <div class="img-info__shape_1__instructors-imgs">
+                                    <div class="img-info__shape_1__instructors-img">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructors"></picture>
+                                    </div>
+                                    <div class="img-info__shape_1__instructors-img">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructors"></picture>
+                                    </div>
+                                    <div class="img-info__shape_1__instructors-img">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructors"></picture>
+                                    </div>
+                                    <div class="img-info__shape_1__instructors-img">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructors"></picture>
+                                    </div>
+                                    <div class="img-info__shape_1__instructors-img">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructors"></picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-info__shape-info img-info__shape_2">
+                                <div class="img-info__shape_2__icon-img">
+                                    <svg class="icon-img _svg-simple-profile">
+                                        <use xlink:href="#simple-profile"></use>
+                                    </svg>
+                                </div>
+                                <h2 class="img-info__shape_2__title">
+                                    18K
+                                </h2>
+                                <div class="img-info__shape_2__text">
+                                    <p>
+                                        Amazing students around the globe
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-moveto="getstarted-section__main-content, last, 767, max" class="getstarted-section__short-cards small-short-cards">
+                        <div class="small-short-cards__item">
+                            <div class="small-short-cards__icon">
+                                <svg class="_svg-math">
+                                    <use xlink:href="#math"></use>
+                                </svg>
+                            </div>
+                            <div class="small-short-cards__text">
+                                Problem Solving
+                            </div>
+                        </div>
+                        <div class="small-short-cards__item">
+                            <div class="small-short-cards__icon">
+                                <svg class="_svg-chat">
+                                    <use xlink:href="#chat"></use>
+                                </svg>
+                            </div>
+                            <div class="small-short-cards__text">
+                                Live chat
+                            </div>
+                        </div>
+                        <div class="small-short-cards__item">
+                            <div class="small-short-cards__icon">
+                                <svg class="_svg-users">
+                                    <use xlink:href="#users"></use>
+                                </svg>
+                            </div>
+                            <div class="small-short-cards__text">
+                                Group Reading
+                            </div>
+                        </div>
+                        <div class="small-short-cards__item">
+                            <div class="small-short-cards__icon">
+                                <svg class="_svg-book">
+                                    <use xlink:href="#book"></use>
+                                </svg>
+                            </div>
+                            <div class="small-short-cards__text">
+                                10k Courses
+                            </div>
+                        </div>
+                        <div class="small-short-cards__item">
+                            <div class="small-short-cards__icon">
+                                <svg class="_svg-hands">
+                                    <use xlink:href="#hands"></use>
+                                </svg>
+                            </div>
+                            <div class="small-short-cards__text">
+                                Hand-on activities
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section categories-section">
+                <div class="categories-section__container">
+                    <div class="categories-section__title-row title-row">
+                        <h2 class="categories-section__title title-row__title">Choose favourite course from top cartegories</h2>
+                        <a href="#" class="categories-section__link-see-all">See all</a>
+                    </div>
+                    <div class="categories-section__slider swiper">
+                        <div class="categories-section__slider-wrapper swiper-wrapper">
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/01.webp" type="image/webp"><img src="img/categories/01.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Marketing
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/02.webp" type="image/webp"><img src="img/categories/02.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Design
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/03.webp" type="image/webp"><img src="img/categories/03.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Programming
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/04.webp" type="image/webp"><img src="img/categories/04.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Technology
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/05.webp" type="image/webp"><img src="img/categories/05.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Cooking
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/06.webp" type="image/webp"><img src="img/categories/06.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Helth and Care
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories-section__slider-slide swiper-slide">
+                                <div class="item-category">
+                                    <a href="#" class="item-category__image">
+                                        <picture><source srcset="img/categories/07.webp" type="image/webp"><img src="img/categories/07.jpg" alt="img-category"></picture>
+                                    </a>
+                                    <div class="item-category__content-text">
+                                        <h3 class="item-category__title">
+                                            <a href="#" class="item-category__link-title">
+                                                Photography
+                                            </a>
+                                        </h3>
+                                        <div class="item-category__text">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                Quam nibh netus auctor consect massa. Maecen vivamus sed nibh enim sed. 
+                                                Hac ridiculus tellus urna quam odio quis montes, diam. 
+                                                Malesuada ut urna eu faucibus faucibus faucibus u
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <button type="button" class="categories-section__slider-btn slider__btn slider__btn_prev _icon-arrow-bottom"></button>
+                        <button type="button" class="categories-section__slider-btn slider__btn slider__btn_next _icon-arrow-bottom"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section popular-courses-section">
+                <div class="popular-courses-section__container">
+                    <div class="popular-courses-section__title-row title-row">
+                        <h2 class="title-row__title">Most Popular courses</h2>
+                        <div data-select class="select">
+                            <button type="button" data-select-btn class="select__btn btn _icon-arrow-bottom">Sort by</button>
+                            <input type="text" name="select" data-select-input value style="display: none;">
+                            <ul data-select-list class="select__list">
+                                <!-- <input data-select-search class="select__search-item" type="text" placeholder="search"> -->
+                                <li class="select__item" data-select-value="New-to-old"><a href="#">New to old</a></li>
+                                <li class="select__item" data-select-value="Old-to-new"><a href="#">Old to new</a></li>
+                                <li class="select__item" data-select-value="By-relevance"><a href="#">By relevance</a></li>
+                                <li class="select__item" data-select-value="By-rating"><a href="#">By rating</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popular-courses-section__cards">
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/01.webp" type="image/webp"><img src="img/courses/01.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Learn Marketing from Top Instructors.</a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/02.webp" type="image/webp"><img src="img/courses/02.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Front-end development is not hard as you think</a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/03.webp" type="image/webp"><img src="img/courses/03.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Everrything you need to know in UX</a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/04.webp" type="image/webp"><img src="img/courses/04.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Learn photography with ease</a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/05.webp" type="image/webp"><img src="img/courses/05.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Be a pro in data analysis</a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-card">
+                            <a href="#" class="course-card__image">
+                                <picture><source srcset="img/courses/06.webp" type="image/webp"><img src="img/courses/06.jpg" alt="course-img"></picture>
+                            </a>
+                            <div class="course-card__footer">
+                                <div class="course-card__title-rating">
+                                    <h3 class="course-card__title">
+                                        <a href="#" class="course-card__title-link">Ethical Harking is not hard as you think </a>
+                                    </h3>
+                                    <div class="course-card__rating _icon-rating">4.5</div>
+                                </div>
+                                <div class="course-card__statistics-price">
+                                    <div class="course-card__statistics">
+                                        <div class="course-card__statistic-week">6 weeks</div>
+                                        <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                    </div>
+                                    <div class="course-card__price">30.5$</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section new-courses-section">
+                <div class="new-courses-section__container">
+                    <div class="new-courses-section__title-row title-row">
+                        <h2 class="title-row__title">Learn a new skill in two hours</h2>
+                    </div>
+                    <div class="new-courses-section__slider swiper">
+                        <div class="new-courses-section__slider-wrapper swiper-wrapper">
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/07.webp" type="image/webp"><img src="img/courses/07.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">All you need in Business Strategy</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/08.webp" type="image/webp"><img src="img/courses/08.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">The amazing hack in Figma prototyping</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/09.webp" type="image/webp"><img src="img/courses/09.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">Introduction to basic game developement</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/10.webp" type="image/webp"><img src="img/courses/10.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">Use surveyMonkey to create a survey</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/11.webp" type="image/webp"><img src="img/courses/11.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">Introduction to front-end development</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/12.webp" type="image/webp"><img src="img/courses/12.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">Get started with First aid </a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-courses-section__slider-slide swiper-slide">
+                                <div class="course-card">
+                                    <a href="#" class="course-card__image">
+                                        <picture><source srcset="img/courses/13.webp" type="image/webp"><img src="img/courses/13.jpg" alt="course-img"></picture>
+                                    </a>
+                                    <div class="course-card__footer">
+                                        <div class="course-card__title-rating">
+                                            <h3 class="course-card__title">
+                                                <a href="#" class="course-card__title-link">Everrything you need to know in UX</a>
+                                            </h3>
+                                            <div class="course-card__rating _icon-rating">4.5</div>
+                                        </div>
+                                        <div class="course-card__statistics-price">
+                                            <div class="course-card__statistics">
+                                                <div class="course-card__statistic-week">6 weeks</div>
+                                                <div class="course-card__statistic-viewers _icon-users">1.5k Students</div>
+                                            </div>
+                                            <div class="course-card__price">30.5$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="new-courses-section__slider-btn slider__btn slider__btn_prev _icon-arrow-bottom"></button>
+                        <button type="button" class="new-courses-section__slider-btn slider__btn slider__btn_next _icon-arrow-bottom"></button>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section about-section">
+                <div class="about-section__container">
+                    <div class="about-section__title-row title-row">
+                        <h2 class="title-row__title">We Bring The Good Education To Life</h2>
+                    </div>
+                    <div class="about-section__wrapper">
+                        <div class="about-section__img-info img-info">
+                            <div class="img-info__image">
+                                <picture><source srcset="img/img-info/02.webp" type="image/webp"><img src="img/img-info/02.jpg" alt="img-info"></picture>
+                            </div>
+                            <div class="img-info__shape-info img-info__shape_2">
+                                <div class="img-info__shape_2__icon-img">
+                                    <svg class="icon-img _svg-job">
+                                        <use xlink:href="#job"></use>
+                                    </svg>
+                                </div>
+                                <h2 class="img-info__shape_2__title">
+                                    <span class="cust-underline">
+                                        Job
+                                        <div class="cust-underline__underline">
+                                            <svg class="_svg-underline" viewBox="0 0 215 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_51_256)">
+                                                    <path d="M2 10.698C70 5.01394 183 -1.78501 212.5 6.46602"/>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </span>
+                                </h2>
+                                <div class="img-info__shape_2__text">
+                                    <p>
+                                        Opportunities
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-section__content">
+                            <h3 class="about-section__title">Let Your Education Do The Walking</h3>
+
+                            <ul class="about-section__list list-about">
+                                <li class="list-about__item">
+                                    <div class="list-about__item-marker">
+                                        <svg class="img-marker _svg-book">
+                                            <use xlink:href="#book"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="list-about__item-text">
+                                        Free E-book, Videos and kits
+                                    </div>
+                                </li>
+                                <li class="list-about__item">
+                                    <div class="list-about__item-marker">
+                                        <svg class="img-marker _svg-timer">
+                                            <use xlink:href="#timer"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="list-about__item-text">
+                                        Learn at your own pace
+                                    </div>
+                                </li>
+                                <li class="list-about__item">
+                                    <div class="list-about__item-marker">
+                                        <svg class="img-marker _svg-job">
+                                            <use xlink:href="#job"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="list-about__item-text">
+                                        Collaborate with different learners around the globe
+                                    </div>
+                                </li>
+                                <li class="list-about__item">
+                                    <div class="list-about__item-marker">
+                                        <svg class="img-marker _svg-users">
+                                            <use xlink:href="#users"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="list-about__item-text">
+                                        Top instructors around the globe
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section reviews-section">
+                <div class="reviews-section__container">
+                    <div class="reviews-section__title-row title-row">
+                        <h2 class="title-row__title">Reviews</h2>
+                    </div>
+
+                    <div class="reviews-section__content reviews">
+                        <div class="reviews__title-block">
+                            <h3 class="reviews__title">
+                                What our 
+                                <span class="cust-underline">
+                                    Students
+                                    <div class="cust-underline__underline">
+                                        <svg class="_svg-underline" viewBox="0 0 215 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_51_256)">
+                                                <path d="M2 10.698C70 5.01394 183 -1.78501 212.5 6.46602"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </span>
+                                say about us
+                            </h3>
+
+                            <div class="reviews__slider-btns">
+                                <button type="button" class="reviews__slider-btn slider__btn slider__btn_prev _icon-arrow-bottom"></button>
+                                <button type="button" class="reviews__slider-btn slider__btn slider__btn_next _icon-arrow-bottom"></button>
+                            </div>
+                        </div>
+                        <div class="reviews__slides">
+                            <div class="reviews__slider swiper">
+                                <div class="reviews__slider-wrapper swiper-wrapper">
+                                    <div class="reviews__slider-slide swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__user user">
+                                                <div class="user__img">
+                                                    <picture><source srcset="img/users/01.webp" type="image/webp"><img src="img/users/01.jpg" alt="user img"></picture>
+                                                </div>
+                                                <div class="user__name-proff">
+                                                    <div class="user__name">Mohh Jumah</div>
+                                                    <div class="user__proff">Senior Developer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slider-slide swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__user user">
+                                                <div class="user__img">
+                                                    <picture><source srcset="img/users/02.webp" type="image/webp"><img src="img/users/02.jpg" alt="user img"></picture>
+                                                </div>
+                                                <div class="user__name-proff">
+                                                    <div class="user__name">John Mark</div>
+                                                    <div class="user__proff">Data Analyst</div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slider-slide swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__user user">
+                                                <div class="user__img">
+                                                    <picture><source srcset="img/users/03.webp" type="image/webp"><img src="img/users/03.jpg" alt="user img"></picture>
+                                                </div>
+                                                <div class="user__name-proff">
+                                                    <div class="user__name">Rabiu Hassan</div>
+                                                    <div class="user__proff">Marketer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slider-slide swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__user user">
+                                                <div class="user__img">
+                                                    <picture><source srcset="img/users/04.webp" type="image/webp"><img src="img/users/04.jpg" alt="user img"></picture>
+                                                </div>
+                                                <div class="user__name-proff">
+                                                    <div class="user__name">Mheyah Khalifa</div>
+                                                    <div class="user__proff">Ux Lead</div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="reviews__slider-slide swiper-slide">
+                                        <div class="review-card">
+                                            <div class="review-card__user user">
+                                                <div class="user__img">
+                                                    <picture><source srcset="img/users/05.webp" type="image/webp"><img src="img/users/05.jpg" alt="user img"></picture>
+                                                </div>
+                                                <div class="user__name-proff">
+                                                    <div class="user__name">Elon Musk</div>
+                                                    <div class="user__proff">Content Writer</div>
+                                                </div>
+                                            </div>
+                                            <div class="review-card__comment">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section our-instructors-section">
+                <div class="our-instructors-section__container">
+                    <div class="our-instructors-section__title-row title-row">
+                        <h2 class="title-row__title">Meet our instructors</h2>
+                    </div>
+                    <div class="our-instructors-section our-instructors">
+                        <div class="our-instructors__cards">
+                            <div class="instructor-card">
+                                <div class="instructor-card__image-big">
+                                    <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructor-img"></picture>
+                                </div>
+                                <div class="instructor-card__content">
+                                    <div class="instructor-card__image">
+                                        <picture><source srcset="img/instructors/01.webp" type="image/webp"><img src="img/instructors/01.png" alt="instructor-img"></picture>
+                                    </div>
+                                    <div class="instructor-card__name">Mohh Jumah</div>
+                                    <div class="instructor-card__proff">Senior Developer</div>
+                                    <div class="instructor-card__slogan">
+                                        <p>
+                                            “Education will be for you what you want it to be” 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-card">
+                                <div class="instructor-card__image-big">
+                                    <picture><source srcset="img/instructors/02.webp" type="image/webp"><img src="img/instructors/02.png" alt="instructor-img"></picture>
+                                </div>
+                                <div class="instructor-card__content">
+                                    <div class="instructor-card__image">
+                                        <picture><source srcset="img/instructors/02.webp" type="image/webp"><img src="img/instructors/02.png" alt="instructor-img"></picture>
+                                    </div>
+                                    <div class="instructor-card__name">Lora Shrof</div>
+                                    <div class="instructor-card__proff">Marketing Lead</div>
+                                    <div class="instructor-card__slogan">
+                                        <p>
+                                            ““Knowledge has to be improved, challenged, and increased constantly, or it vanishes”” 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="instructor-card">
+                                <div class="instructor-card__image-big">
+                                    <picture><source srcset="img/instructors/03.webp" type="image/webp"><img src="img/instructors/03.png" alt="instructor-img"></picture>
+                                </div>
+                                <div class="instructor-card__content">
+                                    <div class="instructor-card__image">
+                                        <picture><source srcset="img/instructors/03.webp" type="image/webp"><img src="img/instructors/03.png" alt="instructor-img"></picture>
+                                    </div>
+                                    <div class="instructor-card__name">Zeng Chin</div>
+                                    <div class="instructor-card__proff">Data Analist at Meta</div>
+                                    <div class="instructor-card__slogan">
+                                        <p>
+                                            “To know that we know what we know, and to know that we do not know what we do not know, that is true knowledge” 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section call-section">
+                <div class="call-section__container">
+                    <div class="call-section__image">
+                        <picture><source srcset="img/call/01.webp" type="image/webp"><img src="img/call/01.jpg" alt="call-img"></picture>
+                    </div>
+                    <div class="call-section__content call">
+                        <h2 class="call__title">You don’t have to see the whole staircase just take the first step</h2>
+                        <div class="call__text">
+                            <p>
+                                Amet in a suspendisse convallis eget, Amet in a suspendisse convallis egetAmet in a 
+                            </p>
+                        </div>
+                        <div class="call__btn-actions">
+                            <a href="#" class="call__btn btn">Get Started</a>
+                            <a href="#" class="call__btn btn btn_lgreen-bg">Place a call</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__about">
+                <div class="footer__logo">
+                    <img src="img/logo-f.svg" alt="footer logo">
+                </div>
+                <div class="footer__slogan">
+                    <p>
+                        We are not here to sell you products, we sell value through our expertise.
+                    </p>
+                </div>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social-link _icon-facebook"></a>
+                    <a href="#" class="footer__social-link _icon-twitter"></a>
+                    <a href="#" class="footer__social-link _icon-instagram"></a>
+                    <a href="#" class="footer__social-link _icon-linkedin"></a>
+                </div>
+            </div>
+            <div class="footer__page-links page-links">
+                <div class="page-links__column page-links__column_main">
+                    <a href="#" class="page-links__link">Home</a>
+                    <a href="#" class="page-links__link">Services</a>
+                    <a href="#" class="page-links__link">Training</a>
+                    <a href="#" class="page-links__link">Resources</a>
+                    <a href="#" class="page-links__link">About Us</a>
+                </div>
+                <div class="page-links__column page-links__column_main">
+                    <a href="#" class="page-links__link">SME</a>
+                    <a href="#" class="page-links__link">Solution</a>
+                    <a href="#" class="page-links__link">Reviews</a>
+                    <a href="#" class="page-links__link">Blog</a>
+                </div>
+                <div class="page-links__column page-links__column_main">
+                    <a href="#" class="page-links__link">Contact Us</a>
+                    <a href="#" class="page-links__link">Place a Call</a>
+                    <a href="#" class="page-links__link">Email</a>
+                    <a href="#" class="page-links__link">Wischool@gmail.com</a>
+                </div>
+                <div class="page-links__column">
+                    <a href="#" class="page-links__link">Job Opening</a>
+                    <a href="#" class="page-links__link">News</a>
+                    <a href="#" class="page-links__link">Research</a>
+                </div>
+                <div class="page-links__column">
+                    <a href="#" class="page-links__link">Uk Privacy Policy</a>
+                    <a href="#" class="page-links__link">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__form-sub form-sub">
+            <div class="form-sub__title">
+                Subscribe to get latest updates
+            </div>
+            <form data-form-req action="#" class="form-sub__form">
+                <input data-required="email" class="form-sub__input" type="text" placeholder="Your Email address">
+                <button type="submit" class="form-sub__btn btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+        <script src="js/app.min.js?_v=20230214191102"></script>
+    </body>
+</html>
